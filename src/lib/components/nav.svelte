@@ -10,26 +10,26 @@
     }
 </script>
 
-<nav class="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
+<nav class="sticky top-0 z-50 py-5 backdrop-blur-lg border-b border-neutral-700/80">
    <div class="container px-4 mx-auto relative lg:text-sm">
 
-        <div class="flex justify-between items-center">
-            <div class="hidden lg:flex items-center flex-shrink-0">
+        <div class="flex justify-center items-center">
+            <!-- <div class="hidden lg:flex items-center flex-shrink-0">
                 <img class="h-10 w-10 mr-2" alt="navbar-logo" src={logo} />
                 <span class="text-xl tracking-tight">CompanyR</span>
-            </div>
+            </div> -->
       
 
         <ul class="hidden lg:flex ml-14 space-x-12">
             {#each navItems as item}
-            <li><a href={item.href}>{item.label}</a></li>
+            <li><a href={item.href} class="hover:border-b border-orange-500" >{item.label}</a></li>
             {/each}
         </ul>
-
+<!-- 
         <div class="hidden lg:flex justify-center space-x-12 items-center">
             <a href="#" class="py-2 px-3 border rounded-md">Sign In</a>
              <a href="#" class="bg-gradient-to-tr from-orange-500 to-orange-800 py-2 px-3 rounded-md"> Create an account</a>
-        </div>
+        </div> -->
       </div>
 
         <div class="lg:hidden md:flex flex-col justify-end">
