@@ -57,7 +57,7 @@ export const aboutUsData = [
       "Web Analytics",
       "Private Mode",
     ],
-    portfolio: '/',
+    portfolio: '/developers/ayushman',
   },
   {
     title: "Suprada Tripathy",
@@ -68,7 +68,7 @@ export const aboutUsData = [
       "Web Analytics (Advance)",
       "Private Mode",
     ],
-    portfolio: '/',
+    portfolio: '/developers/suprada',
   },
 ];
 

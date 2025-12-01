@@ -17,7 +17,7 @@
       title: "B.Tech – GIET University",
       description:
         "Graduated with strong fundamentals in programming, web development, and systems."
-    }
+    }   
   ];
 
     const socials = [
@@ -27,7 +27,7 @@
 </script>
 
 <svelte:head>
-    <title>Ayushman Tripathy</title>
+    <title>Suprada Tripathy</title>
 </svelte:head>
 
 <section class="max-w-7xl mx-auto px-6 space-y-10 py-16 text-white">
@@ -35,7 +35,7 @@
     <!-- HERO / INTRO -->
     <div class="fade-in">
         <p class="text-lg text-gray-300">Hi 👋, My Name is</p>
-        <h1 class="text-5xl font-bold">Ayushman Tripathy</h1>
+        <h1 class="text-5xl font-bold">Suprada Tripathy</h1>
         <p class="text-lg text-gray-400 max-w-xl mt-4">
             Full Stack Developer specializing in modern UI/UX, web applications, and backend engineering.
         </p>
@@ -69,7 +69,7 @@
                 "JavaScript", "Svelte / React", "Tailwind CSS", "Node.js",
                 "Spring Boot", "PostgreSQL", "Figma", "REST APIs"
             ] as skill}
-                <div class="p-4 rounded-xl backdrop-blur-md bg-white/5 border border-white/10 text-center">
+                <div class="p-4 rounded-xl backdrop-blur-md bg-white/10 border border-white/10 text-center">
                     {skill}
                 </div>
             {/each}
@@ -101,20 +101,20 @@
                         "Graduated with Computer Science Engineering."
                 }
             ] as item}
-                <div class="mb-10 ml-4 relative max-sm:ml-0 max-sm:text-center">
-                    <!-- Gradient Dot -->
-                    <div
-                        class="absolute w-3 h-3 bg-gradient-to-r from-orange-500 to-red-800 rounded-full -left-[6px] mt-1.5
-                        max-sm:left-1/2 max-sm:-translate-x-1/2"
-                    ></div>
+            <!-- Gradient Dot-->
+            <div
+                class="absolute w-3 h-3 bg-gradient-to-r from-orange-500 to-red-800 rounded-full
+                       -left-[32px] top-1.5 max-sm:hidden"
+            ></div>
+            <div class="mb-10 ml-4 relative max-sm:ml-0 max-sm:text-center">
 
-                    <p class="text-sm text-gray-400">{item.date}</p>
-                    <h3 class="text-xl font-semibold">{item.title}</h3>
-                    <p class="mt-2 text-gray-300">{item.description}</p>
-                </div>
+                <p class="text-sm text-gray-400">{item.date}</p>
+                <h3 class="text-xl font-semibold">{item.title}</h3>
+                <p class="mt-2 text-gray-300">{item.description}</p>
+            </div>
             {/each}
         </div>
-    </div>
+      </div>
 
     <!-- PROJECTS -->
     <div class="fade-in">
@@ -125,7 +125,7 @@
                 { title: "Social Media Dashboard", desc: "Microservices + Charts." },
                 { title: "Library Management System", desc: "Spring Boot + MySQL." }
             ] as project}
-                <div class="p-5 rounded-xl backdrop-blur-md bg-white/5 border border-white/10 shadow-lg">
+                <div class="p-5 rounded-xl backdrop-blur-md bg-white/10 border border-white/10 shadow-lg">
                     <h3 class="font-semibold">{project.title}</h3>
                     <p class="text-gray-400 text-sm mt-2">{project.desc}</p>
                 </div>
