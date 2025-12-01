@@ -22,7 +22,11 @@
 
         <ul class="hidden lg:flex ml-14 space-x-12">
             {#each navItems as item}
-            <li><a href={item.href} class="hover:border-b border-orange-500" >{item.label}</a></li>
+            {#if item.label === 'TRIPATHY'}
+            <li><a href={item.href} class="hover:border-b border-orange-500 font-bold" >{item.label}</a></li>
+            {:else}
+             <li><a href={item.href} class="hover:border-b border-orange-500" >{item.label}</a></li>
+            {/if}
             {/each}
         </ul>
 <!-- 
