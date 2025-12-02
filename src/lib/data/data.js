@@ -53,9 +53,9 @@ export const aboutUsData = [
     title: "Ayushman Tripathy",
     designation: "Full Stack Developer",
     features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
+      "Skilled in Full Stack Developement",
+      "5+ Years of Experince",
+      "",
       "Private Mode",
     ],
     portfolio: '/developers/ayushman',
@@ -72,6 +72,124 @@ export const aboutUsData = [
     portfolio: '/developers/suprada',
   },
 ];
+
+export const ayushmanData = {
+  name: 'Ayushman Tripathy',
+  desc: 'Full Stack Developer specializing in modern UI/UX, web applications, and backend engineering.',
+  about:'I am a passionate developer with experience in building responsive websites, full-stack apps, and designing clean UI/UX layouts. I focus on writing clean, optimized, and scalable code.',
+
+  skills: [
+    "JavaScript",
+    "Svelte / React",
+    "Tailwind CSS",
+    "Node.js",
+    "Spring Boot",
+    "PostgreSQL",
+    "Figma",
+    "REST APIs"
+  ],
+
+  timeline: [
+    {
+      date: "Dec 2023 – Present",
+      title: "Capgemini – Analyst / Software Engineer",
+      description:
+        "Full Stack Java Developer working with Spring Boot, Microservices, and React."
+    },
+    {
+      date: "Jun 2022 – May 2023",
+      title: "Highradius – Product Intern",
+      description:
+        "Developed dashboards, automation workflows, and contributed to internal product tools."
+    },
+    {
+      date: "2019 – 2023",
+      title: "B.Tech – GIET University",
+      description:
+        "Graduated with strong fundamentals in programming, web development, and systems."
+    }
+  ],
+
+  projects: [
+    { title: "E-Commerce Platform", desc: "Full stack app with payments." },
+    { title: "Social Media Dashboard", desc: "Microservices + Charts." },
+    { title: "Library Management System", desc: "Spring Boot + MySQL." }
+  ],
+
+  services: [
+    "Website Development",
+    "Portfolio Design",
+    "Figma UI/UX Design",
+    "Full-Stack Applications",
+    "Logo & Branding",
+    "Company Websites"
+  ],
+
+  socials: [
+    { name: "GitHub", icon: '/github.png', link: "https://github.com/AyushmanTripathy" },
+    { name: "LinkedIn", icon: '/linkdin.png', link: "https://linkedin.com/in/yourprofile" }
+  ]
+};
+
+
+export const supradaData = {
+  name: 'Suprada Tripathy',
+  desc: 'Full Stack Developer specializing in modern UI/UX, web applications, and backend engineering.',
+  about:'I am a passionate developer with experience in building responsive websites, full-stack apps, and designing clean UI/UX layouts. I focus on writing clean, optimized, and scalable code.',
+
+  skills: [
+    "JavaScript",
+    "Svelte / React",
+    "Tailwind CSS",
+    "Node.js",
+    "Spring Boot",
+    "PostgreSQL",
+    "Figma",
+    "REST APIs"
+  ],
+
+  timeline: [
+    {
+      date: "Dec 2023 – Present",
+      title: "Capgemini – Analyst / Software Engineer",
+      description:
+        "Full Stack Java Developer working with Spring Boot, Microservices, and React."
+    },
+    {
+      date: "Jun 2022 – May 2023",
+      title: "Highradius – Product Intern",
+      description:
+        "Developed dashboards, automation workflows, and contributed to internal product tools."
+    },
+    {
+      date: "2019 – 2023",
+      title: "B.Tech – GIET University",
+      description:
+        "Graduated with strong fundamentals in programming, web development, and systems."
+    }
+  ],
+
+  projects: [
+    { title: "E-Commerce Platform", desc: "Full stack app with payments." },
+    { title: "Social Media Dashboard", desc: "Microservices + Charts." },
+    { title: "Library Management System", desc: "Spring Boot + MySQL." }
+  ],
+
+  services: [
+    "Website Development",
+    "Portfolio Design",
+    "Figma UI/UX Design",
+    "Full-Stack Applications",
+    "Logo & Branding",
+    "Company Websites"
+  ],
+
+  socials: [
+    { name: "GitHub", icon: '/github.png', link: "https://github.com/AyushmanTripathy" },
+    { name: "LinkedIn", icon: '/linkdin.png', link: "https://linkedin.com/in/yourprofile" }
+  ]
+};
+
 
 export const resourcesLinks = [
   { href: "#", text: "Getting Started" },

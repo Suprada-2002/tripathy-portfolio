@@ -1,33 +1,9 @@
 <script lang="ts">
-  const timeline = [
-    {
-      date: "Dec 2023 – Present",
-      title: "Capgemini – Analyst / Software Engineer",
-      description:
-        "Full Stack Java Developer working with Spring Boot, Microservices, and React."
-    },
-    {
-      date: "Jun 2022 – May 2023",
-      title: "Highradius – Product Intern",
-      description:
-        "Developed dashboards, automation workflows, and contributed to internal product tools."
-    },
-    {
-      date: "2019 – 2023",
-      title: "B.Tech – GIET University",
-      description:
-        "Graduated with strong fundamentals in programming, web development, and systems."
-    }   
-  ];
-
-    const socials = [
-        { name: "GitHub", icon: '/github.png', link: "https://github.com/AyushmanTripathy" },
-        { name: "LinkedIn", icon: '/linkdin.png', link: "https://linkedin.com/in/yourprofile" }
-    ];
+    import { ayushmanData, supradaData } from "$lib/data/data";
 </script>
 
 <svelte:head>
-    <title>Suprada Tripathy</title>
+    <title>{supradaData.name}</title>
 </svelte:head>
 
 <section class="max-w-7xl mx-auto px-6 space-y-10 py-16 text-white">
@@ -35,9 +11,9 @@
     <!-- HERO / INTRO -->
     <div class="fade-in">
         <p class="text-lg text-gray-300">Hi 👋, My Name is</p>
-        <h1 class="text-5xl font-bold">Suprada Tripathy</h1>
+        <h1 class="text-5xl font-bold">{supradaData.name}</h1>
         <p class="text-lg text-gray-400 max-w-xl mt-4">
-            Full Stack Developer specializing in modern UI/UX, web applications, and backend engineering.
+           {supradaData.desc}
         </p>
     </div>
 
@@ -45,11 +21,10 @@
     <div class="fade-in p-8 rounded-2xl backdrop-blur-md bg-white/10 border border-white/10 shadow-lg">
         <h2 class="text-3xl font-bold mb-4">About Me</h2>
         <p class="text-gray-300 leading-relaxed">
-            I am a passionate developer with experience in building responsive websites, full-stack apps,
-            and designing clean UI/UX layouts. I focus on writing clean, optimized, and scalable code.
+            {ayushmanData.about}
         </p>
                 <div class="flex gap-5 mt-3">
-            {#each socials as s}
+            {#each supradaData.socials as s}
                 <a href={s.link} target="_blank" rel="noopener noreferrer"
                     class="rounded-sm bg-white/10  backdrop-blur-lg 
                            hover:bg-white/20 transition-all flex items-center justify-center"
@@ -65,10 +40,7 @@
     <div class="fade-in">
         <h2 class="text-3xl font-bold mb-6">Skills</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            {#each [
-                "JavaScript", "Svelte / React", "Tailwind CSS", "Node.js",
-                "Spring Boot", "PostgreSQL", "Figma", "REST APIs"
-            ] as skill}
+            {#each supradaData.skills as skill}
                 <div class="p-4 rounded-xl backdrop-blur-md bg-white/10 border border-white/10 text-center">
                     {skill}
                 </div>
@@ -81,26 +53,7 @@
         <h2 class="text-3xl font-bold mb-8">Experience</h2>
 
         <div class="relative ml-6 border-l border-gray-700 max-sm:ml-0 max-sm:border-none">
-            {#each [
-                {
-                    date: "Dec 2023 – Present",
-                    title: "Capgemini – Analyst / Software Engineer",
-                    description:
-                        "Full Stack Java Developer working with Spring Boot, Microservices, and React."
-                },
-                {
-                    date: "Jun 2022 – May 2023",
-                    title: "Highradius – Product Intern",
-                    description:
-                        "Worked on dashboards, automation systems, and internal tools."
-                },
-                {
-                    date: "2019 – 2023",
-                    title: "B.Tech – GIET University",
-                    description:
-                        "Graduated with Computer Science Engineering."
-                }
-            ] as item}
+            {#each supradaData.timeline as item}
             <!-- Gradient Dot-->
             <div
                 class="absolute w-3 h-3 bg-gradient-to-r from-orange-500 to-red-800 rounded-full
@@ -120,11 +73,7 @@
     <div class="fade-in">
         <h2 class="text-3xl font-bold mb-6">Projects</h2>
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {#each [
-                { title: "E-Commerce Platform", desc: "Full stack app with payments." },
-                { title: "Social Media Dashboard", desc: "Microservices + Charts." },
-                { title: "Library Management System", desc: "Spring Boot + MySQL." }
-            ] as project}
+            {#each supradaData.projects as project}
                 <div class="p-5 rounded-xl backdrop-blur-md bg-white/10 border border-white/10 shadow-lg">
                     <h3 class="font-semibold">{project.title}</h3>
                     <p class="text-gray-400 text-sm mt-2">{project.desc}</p>
@@ -138,14 +87,7 @@
         <h2 class="text-3xl font-bold mb-6">Services</h2>
 
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {#each [
-                "Website Development",
-                "Portfolio Design",
-                "Figma UI/UX Design",
-                "Full-Stack Applications",
-                "Logo & Branding",
-                "Company Websites"
-            ] as service}
+            {#each supradaData.services as service}
                 <div class="p-5 rounded-xl backdrop-blur-md bg-white/5 border border-white/10 text-center">
                     {service}
                 </div>
