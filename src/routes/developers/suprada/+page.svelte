@@ -55,10 +55,10 @@
         <div class="relative ml-6 border-l border-gray-700 max-sm:ml-0 max-sm:border-none">
             {#each supradaData.timeline as item}
             <!-- Gradient Dot-->
-            <div
+            <!-- <div
                 class="absolute w-3 h-3 bg-gradient-to-r from-orange-500 to-red-800 rounded-full
                        -left-[32px] top-1.5 max-sm:hidden"
-            ></div>
+            ></div> -->
             <div class="mb-10 ml-4 relative max-sm:ml-0 max-sm:text-center">
 
                 <p class="text-sm text-gray-400">{item.date}</p>
