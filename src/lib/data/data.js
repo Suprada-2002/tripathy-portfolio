@@ -55,8 +55,9 @@ export const aboutUsData = [
     features: [
       "Skilled in Full Stack Developement",
       "5+ Years of Experince",
-      "",
-      "Private Mode",
+      "Dummy Placeholder",
+      "Dummy Placeholder",
+      "Can build Full Stack Web Application",
     ],
     portfolio: '/developers/ayushman',
   },
@@ -64,10 +65,11 @@ export const aboutUsData = [
     title: "Suprada Tripathy",
     designation: "Full Stack Developer",
     features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
+      "Skilled in Full Stack Developement",
+      "5+ Years of Experince",
+      "Dummy Placeholder",
+      "Dummy Placeholder",
+      "Can build Full Stack Web Application",
     ],
     portfolio: '/developers/suprada',
   },
@@ -131,7 +133,6 @@ export const ayushmanData = {
   ]
 };
 
-
 export const supradaData = {
   name: 'Suprada Tripathy',
   desc: 'Full Stack Developer specializing in modern UI/UX, web applications, and backend engineering.',
@@ -189,7 +190,6 @@ export const supradaData = {
     { name: "LinkedIn", icon: '/linkdin.png', link: "https://linkedin.com/in/yourprofile" }
   ]
 };
-
 
 export const resourcesLinks = [
   { href: "#", text: "Getting Started" },
