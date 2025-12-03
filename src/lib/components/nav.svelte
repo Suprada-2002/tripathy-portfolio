@@ -8,6 +8,18 @@
     function toggleNavbar() {
         mobileDrawerOpen = !mobileDrawerOpen;
     }
+
+    export function cleanHashLink(href) {
+        if (!href) return href;
+        if (href.startsWith("#")) {
+            return "/" + href;
+        }
+        if (href.includes("#")) {
+            return "/" + href.slice(href.indexOf("#"));
+        }
+        return href;
+    }
+
 </script>
 
 <nav class="sticky top-0 z-50 py-5 backdrop-blur-lg border-b border-neutral-700/80">
@@ -25,7 +37,7 @@
             {#if item.label === 'TRIPATHY'}
             <li><a href={item.href} class="hover:border-b border-orange-500 font-bold" >{item.label}</a></li>
             {:else}
-             <li><a href={item.href} class="hover:border-b border-orange-500" >{item.label}</a></li>
+             <li><a href={cleanHashLink(item.href)} class="hover:border-b border-orange-500" >{item.label}</a></li>
             {/if}
             {/each}
         </ul>
