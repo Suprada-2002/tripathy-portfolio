@@ -1,14 +1,14 @@
 import {BotMessageSquare, Fingerprint, PlugZap, BatteryCharging, ShieldHalf, GlobeLock} from '@lucide/svelte';
 
 export const navItems = [
-  { label: "Home", href: "#home" },
+  { label: "Home", href: "/" },
   { label: "About Us", href: "#aboutus" },
   { label: "TRIPATHY", href: "/" },
   { label: "Services", href: "#services" },
   { label: "Testimonials", href: "#testimonials" },
 ];
 
-export const features = [
+export const servicesData = [
   
   {
     icon: BotMessageSquare,
