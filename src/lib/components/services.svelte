@@ -26,6 +26,6 @@
         {/each}
     </div>
     <div class="py-3 text-center">
-        <a href="/services" class="text-white">Know More</a>
+        <a href="/services" class="text-white hover:border-b border-orange-600">{`Know More >`}</a>
     </div>
 </div>

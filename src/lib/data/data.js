@@ -48,6 +48,64 @@ export const servicesData = [
   }
 ];
 
+export const services = [
+		{
+			icon: BotMessageSquare,
+			title: "Website Development",
+			description:
+				"We build fast, responsive, and visually appealing websites tailored to your brand.",
+			pricing: "Starting at ₹7,999",
+			includes: [
+				"Custom responsive design",
+				"SEO-optimized pages",
+				"Fast-loading performance",
+				"Contact forms & integrations"
+			],
+			contact: "+91 9876543210" // replace with yours
+		},
+		{
+			icon: Fingerprint,
+			title: "Portfolio Design",
+			description:
+				"Clean and modern portfolios that highlight your skills, projects, and achievements.",
+			pricing: "Starting at ₹4,999",
+			includes: ["Personal branding", "Project showcase layout", "About + Contact pages"],
+			contact: "+91 9876543210"
+		},
+		{
+			icon: ShieldHalf,
+			title: "Company Website",
+			description:
+				"Professional company profiles that enhance credibility and support business growth.",
+			pricing: "Starting at ₹12,999",
+			includes: ["Multi-page layout", "Company profile", "Team + Services sections"],
+			contact: "+91 9876543210"
+		},
+		{
+			icon: PlugZap,
+			title: "Figma UI/UX Design",
+			description:
+				"High-quality UI/UX designs with excellent usability and polished visuals.",
+			pricing: "Starting at ₹3,999 per screen",
+			includes: ["Wireframes", "High-fidelity mockups", "Interactions & components"],
+			contact: "+91 9876543210"
+		},
+		{
+			icon: GlobeLock,
+			title: "Full-Stack Applications",
+			description:
+				"Complete end-to-end applications built with modern tech and clean architecture.",
+			pricing: "Custom pricing based on requirements",
+			includes: [
+				"Frontend + Backend development",
+				"API design & integration",
+				"Secure authentication",
+				"Database schema and deployment"
+			],
+			contact: "+91 9876543210"
+		}
+	];
+
 export const aboutUsData = [
   {
     title: "Ayushman Tripathy",
