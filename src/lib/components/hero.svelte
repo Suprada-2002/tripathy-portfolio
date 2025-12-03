@@ -13,7 +13,7 @@
     </p>
 
     <div class="py-3">
-        <a href="/">Meet the Develoeprs</a>
+        <a href="#aboutus">Meet the Develoeprs</a>
     </div>
 
 </div>
