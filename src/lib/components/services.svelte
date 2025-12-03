@@ -1,5 +1,5 @@
 <script>
-    import { features } from "$lib/data/data.js";
+    import { servicesData } from "$lib/data/data.js";
 </script>
 
 <div id="services" class="relative mt-20 border-b border-neutral-800 min-h-[800px]">
@@ -11,7 +11,7 @@
     </div>
 
     <div class="flex flex-wrap mt-10 lg:mt-20">
-        {#each features as feature}
+        {#each servicesData as feature}
             <div class="w-full sm:w-1/2 lg:w-1/3">
                 <div class="flex">
                     <div class="flex mx-6 h-10 w-10 p-2 bg-neutral-900 text-orange-700 justify-center items-center rounded-full">
@@ -24,5 +24,8 @@
                 </div>
             </div>
         {/each}
+    </div>
+    <div class="py-3 text-center">
+        <a href="/services" class="text-white">Know More</a>
     </div>
 </div>
